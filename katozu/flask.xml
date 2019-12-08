@@ -10,7 +10,7 @@
   <Description>
   </Description>
   <Registry>https://hub.docker.com/repository/docker/croninkevinm/flask</Registry>
-  <Repository>katozu/flask</Repository>
+  <Repository>croninkevinm/flask</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
