@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <TemplateURL>https://raw.githubusercontent.com/katozu/docker-templates/master/katozu/flask.xml</TemplateURL>
+<Beta>False</Beta>
+<Category>Network:Web Network:Proxy</Category>
+<Date>2019-12-08</Date>
+  <Name>flask</Name>
+  <Support></Support>
+  <Overview></Overview>
+  <Description>
+  </Description>
+  <Registry>https://hub.docker.com/repository/docker/croninkevinm/flask</Registry>
+  <Repository>katozu/flask</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8000</HostPort>
+        <ContainerPort>8000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/www</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version></Version>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <Icon></Icon>
+  <ExtraParams></ExtraParams>
+<BaseImage>python:alpine</BaseImage>
+</Container>
