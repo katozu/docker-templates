@@ -45,6 +45,16 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
+  <Config
+    Type="Variable"
+    Name="WSGI Path"
+    Target="WSGI_PATH"
+    Default="wsgi"
+    Description="WSGI Package path"
+    Mask="false"
+    Display="always"
+    Required="true">WSGI
+  </Config>
   <Version></Version>
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <Icon></Icon>
